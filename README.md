@@ -1,55 +1,74 @@
 Phishing Link Scanner
-A simple tool to detect and analyze potentially malicious phishing URLs using the VirusTotal API. This repository includes both the original Python script (Phishing_Scanner.py) and a compiled Windows executable (Phishing_Scanner.exe).
+
+Phishing Link Scanner is a Python-based tool designed to detect and analyze potentially malicious URLs. It utilizes the VirusTotal API to check URLs against a large database of known threats, helping users identify phishing and malicious links. A standalone .exe file is also provided for users who prefer not to install Python or dependencies.
 
 Features
-Scans URLs for phishing, malware, and suspicious activity using the VirusTotal API
+Scans URLs for phishing indicators
 
-Aggregates results from multiple security vendors
+Integration with the VirusTotal API for threat intelligence
 
-Provides a clear risk assessment
+User-friendly GUI built with Tkinter
 
-Easy to use: just run and enter the URL
+Available as both a Python script and standalone Windows executable
 
-Getting Started
-Files Included
-Phishing_Scanner.py — The main Python script
+VirusTotal API Integration
+This tool uses the VirusTotal Public API to analyze URLs. The API returns reputation scores and threat classifications from multiple antivirus engines and URL scanning services.
 
-Phishing_Scanner.exe — Compiled Windows executable
+To use the tool, you need to generate your own VirusTotal API key:
 
-Usage
-Option 1: Run the Executable (Recommended for Windows)
-Locate Phishing_Scanner.exe in the project folder.
+Create a free account at https://www.virustotal.com
 
-Double-click the file to launch the scanner.
+Navigate to your profile and copy your API key
 
-Enter the URL you want to check when prompted.
+Paste the API key into the script (phishing_scanner.py) where indicated:
 
-View the results directly in the window.
+python
+Copy
+Edit
+API_KEY = "your_api_key_here"
+Prerequisites
+To run the Python script, ensure you have the following:
 
-Option 2: Run the Python Script
-Make sure you have Python 3 installed.
+Python 3.x
 
-Double-click Phishing_Scanner.py
-or
-Right-click the file and choose Open with > Python.
+Required packages:
 
-Alternatively, you can open Command Prompt, navigate to the folder, and type:
+bash
+Copy
+Edit
+pip install requests tkinter
+How to Use
+Running the Python Script
+Clone or download this repository.
 
-text
-python Phishing_Scanner.py
-Enter the URL you want to check when prompted.
+Install dependencies using pip.
 
-How It Works
-Enter the URL you want to check.
+Add your VirusTotal API key to the script.
 
-The tool uses the embedded VirusTotal API to analyze the URL.
+Run the tool:
 
-Results are displayed, indicating whether the link is safe or potentially malicious.
+bash
+Copy
+Edit
+python phishing_scanner.py
+Running the Executable
+Download PhishingLinkScanner.exe from the dist or release folder.
 
-Note: The VirusTotal API key is already embedded in the code. No additional setup is required.
+Launch the application by double-clicking the file.
+
+Enter any URL to scan using VirusTotal.
+
+Future Enhancements
+Add support for other threat intelligence APIs
+
+Save scan results locally
+
+Add command-line interface (CLI) mode
+
+Convert to cross-platform GUI application (e.g., using PyQt)
+
+Author
+Deviprasad
 
 License
-Distributed under the MIT License. See LICENSE for details.
-
-Author: [Your Name]
-Project Link: https://github.com/your_username/phishing-link-scanner
+This project is licensed under the MIT License. See the LICENSE file for more information.
