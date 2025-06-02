@@ -1,6 +1,5 @@
-# Phishing-Link-Scanner
-
-A simple tool to detect and analyze potentially malicious phishing URLs using the VirusTotal API. This repository includes both the original Python script (Phishing_Scanner.py) and a compiled Windows executable (Phishing_Scanner.exe) for ease of use.
+Phishing Link Scanner
+A simple tool to detect and analyze potentially malicious phishing URLs using the VirusTotal API. This repository includes both the original Python script (Phishing_Scanner.py) and a compiled Windows executable (Phishing_Scanner.exe).
 
 Features
 Scans URLs for phishing, malware, and suspicious activity using the VirusTotal API
@@ -12,27 +11,36 @@ Provides a clear risk assessment
 Easy to use: just run and enter the URL
 
 Getting Started
-1. Clone the Repository
-'''bash
-git clone https://github.com/deviprasadlutta/Phishing-Link-Scanner.git
-
-cd phishing-link-scanner
-3. Files Included
+Files Included
 Phishing_Scanner.py — The main Python script
 
 Phishing_Scanner.exe — Compiled Windows executable
 
 Usage
-Run with Python
-Simply execute the script:
+Option 1: Run the Executable (Recommended for Windows)
+Locate Phishing_Scanner.exe in the project folder.
 
-'''bash
+Double-click the file to launch the scanner.
+
+Enter the URL you want to check when prompted.
+
+View the results directly in the window.
+
+Option 2: Run the Python Script
+Make sure you have Python 3 installed.
+
+Double-click Phishing_Scanner.py
+or
+Right-click the file and choose Open with > Python.
+
+Alternatively, you can open Command Prompt, navigate to the folder, and type:
+
+text
 python Phishing_Scanner.py
-Run the Executable
-Double-click Phishing_Scanner.exe and follow the on-screen instructions.
+Enter the URL you want to check when prompted.
 
 How It Works
-Enter the URL you want to check when prompted.
+Enter the URL you want to check.
 
 The tool uses the embedded VirusTotal API to analyze the URL.
 
@@ -43,5 +51,5 @@ Note: The VirusTotal API key is already embedded in the code. No additional setu
 License
 Distributed under the MIT License. See LICENSE for details.
 
-Author: Deviprasadlutta
-Project Link: https://github.com/deviprasadlutta/Phishing-Link-Scanner
+Author: [Your Name]
+Project Link: https://github.com/your_username/phishing-link-scanner
