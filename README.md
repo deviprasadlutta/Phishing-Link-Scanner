@@ -13,10 +13,11 @@ Easy to use: just run and enter the URL
 
 Getting Started
 1. Clone the Repository
-bash
-git clone https://github.com/your_username/phishing-link-scanner.git
+'''bash
+git clone https://github.com/deviprasadlutta/Phishing-Link-Scanner.git
+
 cd phishing-link-scanner
-2. Files Included
+3. Files Included
 Phishing_Scanner.py — The main Python script
 
 Phishing_Scanner.exe — Compiled Windows executable
@@ -25,7 +26,7 @@ Usage
 Run with Python
 Simply execute the script:
 
-bash
+'''bash
 python Phishing_Scanner.py
 Run the Executable
 Double-click Phishing_Scanner.exe and follow the on-screen instructions.
