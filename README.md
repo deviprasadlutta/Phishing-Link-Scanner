@@ -49,7 +49,7 @@ Run the tool:
 
 ```bash
 
-python phishing_scanner.py
+python Phishing_Scanner.py
 ```
 Running the Executable
 Download PhishingLinkScanner.exe from the dist or release folder
